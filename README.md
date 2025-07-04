@@ -8,7 +8,7 @@ This repository maintains an up-to-date comparison of agentic coding tools, high
 
 ## 📋 Tool Categories
 
-## 🎉 **COMPLETE CATALOG: 30 Tools!** 
+## 🎉 **COMPLETE CATALOG: 33 Tools!** 
 
 ### Desktop IDEs & Editors ✅
 - **Cursor** - AI-first code editor built on VS Code
@@ -41,6 +41,11 @@ This repository maintains an up-to-date comparison of agentic coding tools, high
 - **Lovable** - AI-powered full-stack app builder
 - **create.xyz** - Free AI-powered no-code app builder
 - **Firebase Studio** - Google's AI development platform
+- **Hostinger Horizons** - No-code AI partner for web app creation
+- **Convex Chef** - Open-source real-time app builder with backend intelligence
+
+### Visual Development Platforms ✅
+- **Builder.io** - AI-powered design-to-code with Figma integration
 
 ### Code Review & Quality Platforms ✅
 - **CodeRabbit** - AI-powered code review with conversational interface
