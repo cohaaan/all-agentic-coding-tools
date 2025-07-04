@@ -8,7 +8,7 @@ This repository maintains an up-to-date comparison of agentic coding tools, high
 
 ## 📋 Tool Categories
 
-## 🎉 **COMPLETE CATALOG: 33 Tools!** 
+## 🎉 **COMPLETE CATALOG: 34 Tools!** 
 
 ### Desktop IDEs & Editors ✅
 - **Cursor** - AI-first code editor built on VS Code
@@ -54,6 +54,7 @@ This repository maintains an up-to-date comparison of agentic coding tools, high
 ### Autonomous Development Platforms ✅
 - **Factory AI** - Enterprise autonomous development with AI "Droids"
 - **Pythagora** - All-in-one AI development platform with 14 specialized agents
+- **Devin.ai** - World's first fully autonomous AI software engineer
 
 ### AI Models & Ecosystems ✅
 - **OpenAI Codex** - Foundational AI code generation model
