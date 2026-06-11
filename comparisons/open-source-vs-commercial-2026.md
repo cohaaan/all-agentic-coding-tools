@@ -2,16 +2,54 @@
 
 _Last reviewed: June 11, 2026_
 
-This page separates agentic coding tools by licensing and product status. The older catalog mixed open-source tools, proprietary IDEs, cloud app builders, and now-sunsetting products together, so this file should be used as the cleaner 2026 reference.
+This page separates agentic coding tools by licensing, product status, and maintenance activity. The older catalog mixed open-source tools, proprietary IDEs, cloud app builders, and sunsetting products together, so this file should be used as the cleaner 2026 reference.
 
 ## Status legend
 
 - **Active**: current product worth tracking in the main catalog.
-- **Sunsetting / deprecated**: still historically relevant, but should not be recommended as a current first choice.
+- **Active but not recent**: product may still work, but the public repo has not seen fresh commits recently.
+- **Stale / questionable**: public repo has little recent maintenance and should not be treated as a top current option.
+- **Sunsetting / deprecated**: historically relevant, but should not be recommended as a current first choice.
 - **Renamed / replaced**: the old name should redirect to the newer product.
 - **Open source**: public repo under a standard open-source license such as MIT or Apache-2.0.
 - **Source-available / mixed**: source is visible, but licensing or packaging is not cleanly open source.
 - **Commercial / proprietary**: closed-source SaaS, paid IDE, hosted agent, or commercial platform.
+
+## Open-source maintenance check
+
+Dates below are based on the latest visible commit on the primary GitHub branch checked on **June 11, 2026**. This is not the same thing as npm/package release date, company activity, or SaaS product status, but it is the best quick signal for whether the open-source repo itself is maintained.
+
+| Tool | Latest visible GitHub commit as of June 11, 2026 | Maintenance read | Web app / hosted app relevance | Notes |
+|---|---:|---|---|---|
+| **Kilo Code** | June 11, 2026 | Very active | Mostly IDE/CLI/cloud surfaces, not a Bolt-style hosted app builder | Strong open-source current signal. |
+| **OpenAI Codex CLI** | June 11, 2026 | Very active | No, CLI agent | Separate from commercial Codex web/app product. |
+| **Goose** | June 11, 2026 | Very active | No, local desktop/CLI/API agent | Strong open-source current signal. |
+| **Gemini CLI** | June 10, 2026 | Very active | No, CLI agent | Also increasingly tied to Antigravity transition docs. |
+| **Dyad** | June 10, 2026 | Very active | No, local desktop app | Good project, but not what you asked for because it is local. |
+| **Cline** | June 8, 2026 | Very active | No, VS Code/CLI/SDK style agent | Strong agentic coding tool, not app-builder web UI. |
+| **Crush** | June 8, 2026 | Very active | No, CLI agent | Source-available FSL, not pure open source. |
+| **OpenCode** | June 3, 2026 | Active | No, CLI/desktop coding agent | Very important open-source agentic coding tool. |
+| **Aider** | May 22, 2026 | Active | No, CLI pair programmer | Mature and still maintained. |
+| **Roo Code** | May 11, 2026 | Active, but watch status | No, VS Code extension | Recent commits exist, but public repo also contains sunsetting/transition signals, so track carefully. |
+| **Wave Terminal** | May 4, 2026 | Active | No, terminal/workspace app | Maintained, but not a Bolt/Lovable-style app builder. |
+| **Continue** | April 17, 2026 | Active but not very recent | No, IDE assistant | Still worth tracking, but less fresh than Cline/Kilo/Goose/Codex. |
+| **Convex Chef** | March 13, 2026 | Active product, public repo not recently updated | **Yes, best hosted open-source-style app-builder match** | Still the best fit for “web app, not local,” but public repo maintenance is not as fresh as the strongest CLI/IDE agents. |
+| **bolt.diy** | February 5, 2026 | Active but not recent | Sort of, but usually self-host/deploy-yourself | Best open-source Bolt clone, but less ideal than Chef for hosted web usage. |
+| **app.build / appdotbuild-agent** | February 2, 2026 | **Not actively maintained** | No current managed service | README says repo is not actively maintained and the managed service was discontinued. Treat as research/reference only. |
+| **Tabby** | November 26, 2025 | Stale / slower-moving | No, self-hosted code assistant | Not a current Bolt-style app builder. |
+| **Pythagora / GPT Pilot** | August 13, 2025 | Stale / questionable | Not really | Open-source lineage exists, but current product should be tracked separately. |
+| **PearAI** | May 16, 2025 | Stale | No, AI editor | Should not be treated as a top current open-source option unless activity resumes. |
+
+## Practical answer for open-source web app builders
+
+If the requirement is **open-source or source-visible, Bolt/Lovable-style, and usable as a web app rather than local-only**, the honest ranking is:
+
+1. **Convex Chef** — best match because it has a hosted web app and backend/database awareness.
+2. **bolt.diy** — best open-source Bolt clone, but generally more self-host/deploy-yourself than a polished hosted app-builder.
+3. **app.build / appdotbuild-agent** — do not recommend as active; useful only as research/reference/fork material.
+4. **Dyad** — very active, but local desktop, so it fails the web-app requirement.
+
+There is still no perfect open-source hosted replacement for Lovable, Bolt.new, Base44, Replit Agent, or v0. Chef is the closest current fit, but its public repo should be watched because the last visible commit is March 13, 2026.
 
 ## Major 2026 corrections
 
@@ -45,30 +83,31 @@ Recommended repo treatment:
 
 ## Open-source / self-hostable agentic coding tools
 
-| Tool | Category | Status | License / openness | Repo / site | Notes |
-|---|---|---|---|---|---|
-| **Aider** | CLI pair programmer | Active | Open source | https://github.com/Aider-AI/aider | Mature terminal coding assistant with strong git workflow. |
-| **Cline** | VS Code extension | Active | Open source | https://github.com/cline/cline | Autonomous VS Code coding agent with tool use and MCP support. |
-| **Roo Code** | VS Code extension | Active | Open source | https://github.com/RooCodeInc/Roo-Code | Cline-family autonomous coding agent with multiple modes. |
-| **Kilo Code** | IDE / CLI platform | Active | Open source, MIT | https://github.com/Kilo-Org/kilocode | Agentic engineering platform spanning VS Code, JetBrains, CLI, Slack, and cloud surfaces. |
-| **OpenCode** | CLI / desktop coding agent | Active | Open source, MIT | https://github.com/anomalyco/opencode | Major open-source terminal coding agent; should be added as its own tool page. |
-| **OpenAI Codex CLI** | CLI coding agent | Active | Open source, Apache-2.0 | https://github.com/openai/codex | Open-source CLI client for Codex-style local coding workflows. Do not confuse with commercial Codex web/cloud product. |
-| **Gemini CLI** | CLI coding agent | Active | Open source, Apache-2.0 | https://github.com/google-gemini/gemini-cli | Google terminal agent with Gemini models, MCP, shell/file tooling, and web grounding. |
-| **Goose** | Desktop / CLI / API agent | Active | Open source, Apache-2.0 | https://github.com/aaif-goose/goose | Local general-purpose agent useful for code, automation, research, and MCP-style extensions. |
-| **Continue** | IDE assistant / agent | Active | Open source | https://github.com/continuedev/continue | Open-source AI coding assistant for VS Code and JetBrains; good for custom models and local/enterprise setups. |
-| **PearAI** | AI editor | Active | Open source | https://github.com/trypear/pearai-master | Open-source AI editor. |
-| **bolt.diy** | Web app builder | Active | Open source | https://github.com/stackblitz-labs/bolt.diy | Open-source/local version of bolt-style app generation with multi-provider support. |
-| **Convex Chef** | App builder / backend | Active | Open source | https://github.com/get-convex/chef | AI app builder tied to Convex backend primitives. |
-| **Pythagora / GPT Pilot** | Agentic app builder | Active | Open source / mixed | https://github.com/Pythagora-io/gpt-pilot | Track carefully: the open-source lineage exists, but the commercial product packaging may differ. |
-| **Wave Terminal** | Terminal + AI | Active | Open source | https://github.com/wavetermdev/waveterm | Open-source terminal with graphical widgets and AI capabilities. |
+| Tool | Category | Status | Last visible commit as of June 11, 2026 | License / openness | Repo / site | Notes |
+|---|---|---|---:|---|---|---|
+| **Aider** | CLI pair programmer | Active | May 22, 2026 | Open source | https://github.com/Aider-AI/aider | Mature terminal coding assistant with strong git workflow. |
+| **Cline** | VS Code extension / CLI / SDK | Very active | June 8, 2026 | Open source | https://github.com/cline/cline | Autonomous coding agent with tool use and MCP support. |
+| **Roo Code** | VS Code extension | Active, but watch status | May 11, 2026 | Open source | https://github.com/RooCodeInc/Roo-Code | Cline-family autonomous coding agent; track status carefully because the repo contains transition/sunsetting signals. |
+| **Kilo Code** | IDE / CLI platform | Very active | June 11, 2026 | Open source, MIT | https://github.com/Kilo-Org/kilocode | Agentic engineering platform spanning VS Code, JetBrains, CLI, Slack, and cloud surfaces. |
+| **OpenCode** | CLI / desktop coding agent | Active | June 3, 2026 | Open source, MIT | https://github.com/anomalyco/opencode | Major open-source terminal coding agent; should be added as its own tool page. |
+| **OpenAI Codex CLI** | CLI coding agent | Very active | June 11, 2026 | Open source, Apache-2.0 | https://github.com/openai/codex | Open-source CLI client for Codex-style local coding workflows. Do not confuse with commercial Codex web/cloud product. |
+| **Gemini CLI** | CLI coding agent | Very active | June 10, 2026 | Open source, Apache-2.0 | https://github.com/google-gemini/gemini-cli | Google terminal agent with Gemini models, MCP, shell/file tooling, and web grounding. |
+| **Goose** | Desktop / CLI / API agent | Very active | June 11, 2026 | Open source, Apache-2.0 | https://github.com/aaif-goose/goose | Local general-purpose agent useful for code, automation, research, and MCP-style extensions. |
+| **Continue** | IDE assistant / agent | Active but not recent | April 17, 2026 | Open source | https://github.com/continuedev/continue | Open-source AI coding assistant for VS Code and JetBrains; good for custom models and local/enterprise setups. |
+| **PearAI** | AI editor | Stale | May 16, 2025 | Open source | https://github.com/trypear/pearai-master | Do not treat as a top current option unless activity resumes. |
+| **bolt.diy** | Web app builder / Bolt clone | Active but not recent | February 5, 2026 | Open source | https://github.com/stackblitz-labs/bolt.diy | Open-source/local version of bolt-style app generation with multi-provider support. Usually more self-host/deploy-yourself than hosted app. |
+| **Convex Chef** | Hosted app builder / backend-aware builder | Active product, repo not recently updated | March 13, 2026 | Open source | https://github.com/get-convex/chef | Best match for open-source-style hosted web app builder, but public repo maintenance should be watched. |
+| **Pythagora / GPT Pilot** | Agentic app builder | Stale / mixed | August 13, 2025 | Open source / mixed | https://github.com/Pythagora-io/gpt-pilot | Track carefully: open-source lineage exists, but current product packaging may differ. |
+| **Wave Terminal** | Terminal + AI | Active | May 4, 2026 | Open source | https://github.com/wavetermdev/waveterm | Open-source terminal with graphical widgets and AI capabilities. |
+| **Dyad** | Local app builder | Very active, but local-only | June 10, 2026 | Open source | https://github.com/dyad-sh/dyad | Strong project, but not a web app. Keep separate from hosted app-builder options. |
 
 ## Source-available / mixed-license tools
 
-| Tool | Category | Status | Openness | Repo / site | Notes |
-|---|---|---|---|---|---|
-| **Crush** | CLI coding agent | Active | Source-available, FSL-1.1-MIT | https://github.com/charmbracelet/crush | Useful terminal agent from Charmbracelet. Keep separate from pure open source because FSL is not standard MIT/Apache at release time. |
-| **Tabby** | Self-hosted code assistant | Active | Open-source core / commercial options | https://github.com/TabbyML/tabby | Good to track for self-hosted completion/chat; less of a full autonomous coding agent than Cline/OpenCode/Codex. |
-| **Sourcegraph Cody** | Code assistant | Active but strategically secondary | Commercial / mixed history | https://sourcegraph.com/cody | Historically important, but Sourcegraph’s current flagship agentic product is Amp. |
+| Tool | Category | Status | Last visible commit as of June 11, 2026 | Openness | Repo / site | Notes |
+|---|---|---|---:|---|---|---|
+| **Crush** | CLI coding agent | Very active | June 8, 2026 | Source-available, FSL-1.1-MIT | https://github.com/charmbracelet/crush | Useful terminal agent from Charmbracelet. Keep separate from pure open source because FSL is not standard MIT/Apache at release time. |
+| **Tabby** | Self-hosted code assistant | Stale / slower-moving | November 26, 2025 | Open-source core / commercial options | https://github.com/TabbyML/tabby | Good to track for self-hosted completion/chat; less of a full autonomous coding agent than Cline/OpenCode/Codex. |
+| **Sourcegraph Cody** | Code assistant | Active but strategically secondary | N/A | Commercial / mixed history | https://sourcegraph.com/cody | Historically important, but Sourcegraph’s current flagship agentic product is Amp. |
 
 ## Commercial / proprietary repo-centric coding agents and IDEs
 
@@ -92,7 +131,7 @@ Recommended repo treatment:
 | **Factory AI** | Autonomous dev platform | Active | Factory | Commercial AI “Droids” for enterprise development workflows. |
 | **CodeRabbit** | Code review agent | Active | CodeRabbit | Commercial AI code review platform. |
 | **Qodo** | Code quality/testing | Active | Qodo | Commercial code quality/testing platform. |
-| **Warp** | AI terminal | Active | Warp | Commercial terminal with AI features; not pure open source. |
+| **Warp** | AI terminal | Active | Warp | Commercial AI terminal. |
 
 ## Commercial app builders / vibe-coding platforms
 
@@ -117,6 +156,7 @@ These are adjacent to agentic coding tools. They are often less repo-centric tha
 |---|---|---|---|
 | **Firebase Studio** | Sunsetting / deprecated | Google Antigravity and Google AI Studio | Keep for history, but remove from active recommended list. Final shutdown is planned for March 22, 2027. Core Firebase backend services continue separately. |
 | **Project IDX** | Renamed / replaced | Firebase Studio, then sunset path to Antigravity / AI Studio | Project IDX became Firebase Studio; do not list IDX separately as an active product. |
+| **app.build / appdotbuild-agent** | Not actively maintained | Research/reference only | Repo says it is not actively maintained and the managed service was discontinued. Latest visible commit: February 2, 2026. |
 | **GitHub Copilot “Ghostwriter” wording** | Outdated naming | GitHub Copilot / Copilot Coding Agent | Use current GitHub Copilot naming and separate the older completion/chat feature set from the newer coding-agent workflows. |
 | **OpenAI Codex as only a “model”** | Outdated framing | Codex CLI + Codex web/cloud product | The repo should distinguish the open-source CLI from OpenAI’s commercial Codex product surface. |
 | **Claude Code as terminal-only** | Outdated framing | Claude Code product family | Keep the tool, but update description to include CLI, IDE, web/cloud, desktop sessions, review/security. |
