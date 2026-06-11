@@ -1,66 +1,102 @@
 # Agentic Coding Tools Catalog
 
-A comprehensive, open-source catalog of AI-powered coding tools, IDEs, and platforms that help developers build applications with artificial intelligence assistance.
+A catalog of agentic coding tools, AI IDEs, coding agents, code review agents, and AI app builders, clearly separated by **open-source**, **source-available / mixed**, **commercial / proprietary**, and **sunsetting / deprecated** status.
 
 ## 🎯 Purpose
 
-This repository maintains an up-to-date comparison of agentic coding tools, highlighting their strengths, weaknesses, and unique features to help developers choose the right tool for their needs.
+This repository tracks the fast-changing agentic coding ecosystem so developers can compare tools by capability, openness, product status, and best use case.
 
-## 📋 Tool Categories
+The catalog intentionally separates:
 
-## 🎉 **COMPLETE CATALOG: 34 Tools!** 
+- open-source / self-hostable coding agents
+- source-available or mixed-license projects
+- commercial coding agents and AI IDEs
+- commercial app builders / vibe-coding platforms
+- deprecated, renamed, or sunsetting products
 
-### Desktop IDEs & Editors ✅
+## 🔎 2026 status refresh
+
+See the new comparison page:
+
+- [`comparisons/open-source-vs-commercial-2026.md`](comparisons/open-source-vs-commercial-2026.md)
+
+That page includes the latest cleanup notes, including:
+
+- **Firebase Studio** should be treated as **sunsetting / deprecated**, not an active recommended platform.
+- **Project IDX** should be treated as the older name for Firebase Studio, not a separate active product.
+- **Claude Code** should no longer be described as terminal-only. Track it as a Claude coding product family spanning CLI, IDE, web/cloud, desktop sessions, review/security, and related Anthropic coding surfaces.
+- **GitHub Copilot** should be updated beyond autocomplete/chat to include agent mode, coding agent, and issue-to-PR workflows.
+- **OpenAI Codex** should be split between the open-source **Codex CLI** and OpenAI’s commercial Codex web/app product.
+
+## 📋 Main tool groups
+
+### Open-source / self-hostable tools
+
+- **Aider** - terminal AI pair programmer with strong git workflow
+- **Cline** - open-source autonomous VS Code coding agent
+- **Roo Code** - Cline-family autonomous coding agent
+- **Kilo Code** - open-source agentic engineering platform across IDE, CLI, Slack, and cloud surfaces
+- **OpenCode** - open-source terminal / desktop coding agent
+- **OpenAI Codex CLI** - open-source CLI coding agent
+- **Gemini CLI** - Google’s open-source terminal coding agent
+- **Goose** - open-source local desktop / CLI / API agent
+- **Continue** - open-source IDE assistant for VS Code and JetBrains
+- **PearAI** - open-source AI code editor
+- **bolt.diy** - open-source/local version of bolt-style app generation
+- **Convex Chef** - open-source AI app builder with Convex backend primitives
+- **Wave Terminal** - open-source terminal with graphical widgets and AI capabilities
+
+### Source-available / mixed-license tools
+
+- **Crush** - terminal coding agent from Charmbracelet; source-available rather than pure open source
+- **Tabby** - self-hosted code assistant with open-source core and commercial options
+- **Pythagora / GPT Pilot** - open-source lineage with commercial product packaging to track carefully
+- **Sourcegraph Cody** - historically important, but Sourcegraph’s current flagship agent product is Amp
+
+### Commercial coding agents and AI IDEs
+
+- **Claude Code** - Anthropic coding agent family, not just a CLI
+- **Claude Cowork** - Anthropic GUI/workflow agent surface related to Claude Code direction
 - **Cursor** - AI-first code editor built on VS Code
-- **Windsurf** - AI agent-powered IDE with deep contextual understanding
-- **Pear AI** - Open-source AI editor with AI Router technology
-- **Trae** - ByteDance's free AI-powered IDE
-- **Cline** - Open-source AI coding assistant (VS Code extension)
-- **Roo-Code** - Autonomous AI development team in VS Code
+- **Windsurf** - agentic AI IDE
+- **Trae** - ByteDance AI IDE
+- **GitHub Copilot Coding Agent / Agent HQ** - Copilot agent mode and issue-to-PR workflows
+- **OpenAI Codex Web / App** - commercial Codex coding agent surface
+- **Amp** - Sourcegraph terminal/editor coding agent
+- **Amazon Q Developer** - AWS enterprise AI coding assistant
+- **Kiro** - AWS/Amazon spec-driven agentic IDE
+- **Google Antigravity** - Google agent-first IDE / agent manager
+- **Augment Code** - commercial assistant for large codebases
+- **Tabnine** - privacy/enterprise-oriented AI coding assistant
+- **Jules** - Google async autonomous coding agent
+- **Devin** - Cognition autonomous software engineer
+- **Factory AI** - commercial autonomous development platform
+- **CodeRabbit** - commercial AI code review platform
+- **Qodo** - commercial code quality and testing platform
+- **Warp** - commercial AI terminal
 
-### AI Coding Assistants ✅
-- **GitHub Copilot** - Industry-leading AI pair programmer
-- **Tabnine** - Privacy-focused AI assistant with 600+ language support
-- **Amazon Q Developer** - AWS's enterprise AI coding assistant
-- **Augment Code** - Professional AI assistant for large codebases
-- **Jules** - Google's autonomous AI coding agent
+### Commercial app builders / vibe-coding platforms
 
-### Command-line Tools ✅
-- **Claude Code** - Terminal-based agentic coding tool
-- **Aider** - Open-source AI pair programming in terminal
-- **Warp** - AI-enhanced terminal with natural language commands
-- **Wave Terminal** - Open-source terminal with graphical widgets and AI
-- **Gemini CLI** - Google's open-source AI command-line agent
-- **Atlassian CLI** - Command-line interface for Atlassian ecosystem
+- **bolt.new** - StackBlitz browser-based AI app builder
+- **Lovable** - natural-language full-stack app builder
+- **Replit Agent** - cloud IDE + app generation + deployment workflow
+- **v0** - Vercel UI/app generation platform
+- **Base44** - commercial AI app builder
+- **Emergent** - commercial AI app builder
+- **Hostinger Horizons** - no-code/AI web app creation platform
+- **create.xyz** - prompt-based app/site builder
+- **Builder.io** - visual development and design-to-code tooling
+- **GitHub Spark** - GitHub-native natural-language app builder
 
-### Web-Based Platforms ✅
-- **bolt.new** - AI web app builder by StackBlitz
-- **bolt.diy** - Open-source version of bolt.new with multi-LLM support
-- **v0** - Vercel's AI-powered UI generator
-- **Replit** - Cloud IDE with Ghostwriter AI
-- **Lovable** - AI-powered full-stack app builder
-- **create.xyz** - Free AI-powered no-code app builder
-- **Firebase Studio** - Google's AI development platform
-- **Hostinger Horizons** - No-code AI partner for web app creation
-- **Convex Chef** - Open-source real-time app builder with backend intelligence
+### Sunsetting, deprecated, renamed, or replaced
 
-### Visual Development Platforms ✅
-- **Builder.io** - AI-powered design-to-code with Figma integration
+- **Firebase Studio** - sunsetting / deprecated; keep for history, but remove from active recommended tools
+- **Project IDX** - older name / predecessor of Firebase Studio
+- **OpenAI Codex as only a “model”** - outdated framing; split into Codex CLI and Codex web/app product
+- **Claude Code as terminal-only** - outdated framing; update to Claude coding product family
+- **GitHub Copilot as autocomplete-only** - outdated framing; update to include agent mode and coding agent workflows
 
-### Code Review & Quality Platforms ✅
-- **CodeRabbit** - AI-powered code review with conversational interface
-- **Qodo** - Comprehensive code quality and testing platform
-
-### Autonomous Development Platforms ✅
-- **Factory AI** - Enterprise autonomous development with AI "Droids"
-- **Pythagora** - All-in-one AI development platform with 14 specialized agents
-- **Devin.ai** - World's first fully autonomous AI software engineer
-
-### AI Models & Ecosystems ✅
-- **OpenAI Codex** - Foundational AI code generation model
-- **Open Code** - Ecosystem of open-source AI coding tools
-
-## 🗂️ Repository Structure
+## 🗂️ Repository structure
 
 ```
 /
@@ -73,36 +109,43 @@ This repository maintains an up-to-date comparison of agentic coding tools, high
 ├── comparisons/
 │   ├── desktop-ides.md
 │   ├── web-platforms.md
-│   └── open-source-tools.md
+│   ├── open-source-tools.md
+│   └── open-source-vs-commercial-2026.md
 └── CONTRIBUTING.md
 ```
 
-## 🤝 Contributing
+## Suggested next tool pages
 
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details on how to add new tools, update existing information, or improve the catalog.
+High-priority missing pages to add next:
 
-## 📊 Tool Rating System
+- `tools/amp.md`
+- `tools/opencode.md`
+- `tools/kilo-code.md`
+- `tools/goose.md`
+- `tools/crush.md`
+- `tools/google-antigravity.md`
+- `tools/kiro.md`
+- `tools/base44.md`
+- `tools/emergent.md`
+- `tools/github-spark.md`
 
-Each tool is evaluated on:
-- **Ease of Use** (1-5 stars)
-- **Code Quality** (1-5 stars)
-- **Performance** (1-5 stars)
-- **Language Support** (1-5 stars)
-- **Community/Support** (1-5 stars)
+## 📊 Tool rating system
+
+Each tool can be evaluated on:
+
+- agentic capability
+- repo/codebase awareness
+- edit/run/test loop quality
+- autonomy and safety controls
+- model/provider flexibility
+- IDE/CLI/cloud availability
+- openness and self-hostability
+- pricing and enterprise readiness
 
 ## 🏷️ License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🚀 Getting Started
-
-Browse the `tools/` directory to find detailed information about each coding tool, including:
-- Key features and capabilities
-- Strengths and weaknesses
-- Pricing and availability
-- Best use cases
-- Community feedback
-
 ---
 
-*Last updated: July 2025*
+*Last updated: June 2026*
