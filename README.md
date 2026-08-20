@@ -1,3 +1,5 @@
+
+
 # Agentic Coding Tools Catalog
 
 A catalog of agentic coding tools, AI IDEs, coding agents, code review agents, and AI app builders, clearly separated by **open-source**, **source-available / mixed**, **commercial / proprietary**, and **sunsetting / deprecated** status.
@@ -41,7 +43,7 @@ That page includes the latest cleanup notes, including:
 - **Gemini CLI** - Google’s open-source terminal coding agent
 - **Goose** - open-source local desktop / CLI / API agent
 - **Continue** - open-source IDE assistant for VS Code and JetBrains
-- **PearAI** - open-source AI code editor
+- **PearAI** - open-source AI code editor; stale, do not treat as a top current option unless activity resumes
 - **bolt.diy** - open-source/local version of bolt-style app generation
 - **Convex Chef** - open-source AI app builder with Convex backend primitives
 - **Wave Terminal** - open-source terminal with graphical widgets and AI capabilities
